@@ -4605,28 +4605,43 @@ var SlugPage = function SlugPage(_ref) {
   console.log(content);
 
   var codeString = _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(content);
-  /* Now you need to map your own components, I just left the headline module as reference */
 
+  var body = content.body;
+  var headlineModuleData = content.body.find(function (item) {
+    return item.component === "HeadlineModule";
+  });
+  var paragraphModuleData = content.body.find(function (item) {
+    return item.component === "ParagraphModule";
+  });
+  /* Now you need to map your own components, I just left the headline module as reference */
 
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 35
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 36
     },
     __self: this
-  }, "\uD83C\uDF08 This is what you are getting back from Storyblok: \uD83C\uDF08"), __jsx("p", {
+  }, "\uD83C\uDF08 This is what you are getting back from Storyblok: \uD83C\uDF08"), headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: headlineModuleData.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 38
     },
     __self: this
-  }, codeString));
+  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    title: paragraphModuleData.text,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }) : null);
 };
 /* Before rendering, we are calling our internal API endpoint (server).
 This call is hitting the code we wrote in 'pages/api/page/[slug].js' */
@@ -4667,7 +4682,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
 /*!*************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2F%5Bpage%5D.js ***!
   \*************************************************************************************************************************************************************************/
@@ -4690,5 +4705,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[4,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map

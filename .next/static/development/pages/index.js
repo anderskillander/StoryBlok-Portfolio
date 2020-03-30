@@ -3729,7 +3729,7 @@ var DefaultPage = function DefaultPage() {
 
 /***/ }),
 
-/***/ 7:
+/***/ 1:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************************************/
@@ -3752,5 +3752,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

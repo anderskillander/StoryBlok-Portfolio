@@ -22,12 +22,21 @@ const SlugPage = ({ data }) => {
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   const codeString = JSON.stringify(content);
+  const { body } = content
+
+  const headlineModuleData = content.body.find(
+    item => item.component === "HeadlineModule"
+  );
+  const paragraphModuleData = content.body.find(
+    item => item.component === "ParagraphModule"
+  );
   /* Now you need to map your own components, I just left the headline module as reference */
   return (
     <DefaultLayout>
       <h3>🌈 This is what you are getting back from Storyblok: 🌈</h3>
-      <p>{codeString}</p>
-      {/* {headlineModuleData ? <HeadlineModule title={headlineModuleData.title} /> : null} */}
+      {/* <p>{codeString}</p> */}
+      {headlineModuleData ? <HeadlineModule title={headlineModuleData.title} /> : null}
+      {paragraphModuleData ? <ParagraphModule title={paragraphModuleData.text} /> : null}
     </DefaultLayout>
   );
 };

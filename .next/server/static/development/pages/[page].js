@@ -414,27 +414,40 @@ const SlugPage = ({
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   const codeString = JSON.stringify(content);
+  const {
+    body
+  } = content;
+  const headlineModuleData = content.body.find(item => item.component === "HeadlineModule");
+  const paragraphModuleData = content.body.find(item => item.component === "ParagraphModule");
   /* Now you need to map your own components, I just left the headline module as reference */
 
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 35
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 36
     },
     __self: undefined
-  }, "\uD83C\uDF08 This is what you are getting back from Storyblok: \uD83C\uDF08"), __jsx("p", {
+  }, "\uD83C\uDF08 This is what you are getting back from Storyblok: \uD83C\uDF08"), headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: headlineModuleData.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 38
     },
     __self: undefined
-  }, codeString));
+  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: paragraphModuleData.text,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }) : null);
 };
 /* Before rendering, we are calling our internal API endpoint (server).
 This call is hitting the code we wrote in 'pages/api/page/[slug].js' */
