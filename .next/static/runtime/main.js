@@ -4797,7 +4797,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/anderskillander/WebDev/react-storyblok-next-boilerplate/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/.next");
       return error;
     }
   };

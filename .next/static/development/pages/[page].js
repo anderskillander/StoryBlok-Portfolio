@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/anderskillander/WebDev/react-storyblok-next-boilerplate/components/common/Head/index.jsx";
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/common/Head/index.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -99,7 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styleReset.scss */ "./components/layouts/DefaultLayout/styleReset.scss");
 /* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styleReset_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
-var _jsxFileName = "/Users/anderskillander/WebDev/react-storyblok-next-boilerplate/components/layouts/DefaultLayout/index.js";
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/layouts/DefaultLayout/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -155,7 +155,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/HeadlineModule/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/anderskillander/WebDev/react-storyblok-next-boilerplate/components/modules/HeadlineModule/index.jsx";
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/modules/HeadlineModule/index.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ParagraphModule/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/anderskillander/WebDev/react-storyblok-next-boilerplate/components/modules/ParagraphModule/index.jsx";
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/modules/ParagraphModule/index.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -3375,10 +3375,10 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2F%5Bpage%5D.js!./":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2F%5Bpage%5D.js ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js!./":
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4572,7 +4572,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
 
 
-var _jsxFileName = "/Users/anderskillander/WebDev/react-storyblok-next-boilerplate/pages/[page].js";
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/[page].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -4682,14 +4682,14 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 4:
-/*!*************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2F%5Bpage%5D.js ***!
-  \*************************************************************************************************************************************************************************/
+/***/ 2:
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js ***!
+  \***********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2F%5Bpage%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2Freact-storyblok-next-boilerplate%2Fpages%2F%5Bpage%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js!./");
 
 
 /***/ }),
@@ -4705,5 +4705,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map

@@ -171,7 +171,7 @@ const Storyblok = new StoryblokClient({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/anderskillander/WebDev/react-storyblok-next-boilerplate/pages/api/page/[slug].js */"./pages/api/page/[slug].js");
+module.exports = __webpack_require__(/*! /Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/api/page/[slug].js */"./pages/api/page/[slug].js");
 
 
 /***/ }),

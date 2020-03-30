@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -558,14 +558,14 @@ var styles = {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************************************!*\
   !*** multi ./node_modules/next/dist/pages/_error.js ***!
   \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/anderskillander/WebDev/react-storyblok-next-boilerplate/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__(/*! /Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
 
 
 /***/ }),
