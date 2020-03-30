@@ -1,3 +1,6 @@
+# This is a student project at Hyper Island with @madamerobot. Below is the instructions we were given
+
+
 # FED21 Data Interaction
 Boilerplate using React, Next.js and Storyblok.
 
