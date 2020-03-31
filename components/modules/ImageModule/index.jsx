@@ -4,7 +4,7 @@ import style from './index.scss';
 const ImageModule = ({ copy }) => {
     return (
         <div className={style.root}>
-            <p>{copy}</p>
+            <img src={copy}></img>
         </div>
     );
 };

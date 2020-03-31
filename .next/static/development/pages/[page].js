@@ -207,13 +207,14 @@ var ImageModule = function ImageModule(_ref) {
       lineNumber: 6
     },
     __self: this
-  }, __jsx("p", {
+  }, __jsx("img", {
+    src: copy,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, copy));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ImageModule);
@@ -10621,7 +10622,7 @@ var SlugPage = function SlugPage(_ref) {
     },
     __self: this
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    copy: imageModuleData.text,
+    copy: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46

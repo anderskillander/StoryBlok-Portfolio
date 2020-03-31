@@ -339,13 +339,14 @@ const ImageModule = ({
       lineNumber: 6
     },
     __self: undefined
-  }, __jsx("p", {
+  }, __jsx("img", {
+    src: copy,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: undefined
-  }, copy));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ImageModule);
@@ -2171,7 +2172,7 @@ const SlugPage = ({
     },
     __self: undefined
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    copy: imageModuleData.text,
+    copy: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46

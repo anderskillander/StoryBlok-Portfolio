@@ -43,7 +43,7 @@ const SlugPage = ({ data }) => {
         <ParagraphModule copy={paragraphModuleData.text} />
       ) : null}
       {imageModuleData ? (
-        <ImageModule copy={imageModuleData.text} />
+        <ImageModule copy={imageModuleData.image} />
       ) : null}
     </DefaultLayout>
   );
