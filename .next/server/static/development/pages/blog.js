@@ -259,6 +259,62 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./components/modules/ParagraphModule/index.jsx":
+/*!******************************************************!*\
+  !*** ./components/modules/ParagraphModule/index.jsx ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ParagraphModule/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/modules/ParagraphModule/index.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* styles */
+
+
+const ParagraphModule = ({
+  copy
+}) => {
+  return __jsx("div", {
+    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, copy));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ParagraphModule);
+
+/***/ }),
+
+/***/ "./components/modules/ParagraphModule/index.scss":
+/*!*******************************************************!*\
+  !*** ./components/modules/ParagraphModule/index.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"root": "root___6SFYA"
+};
+
+/***/ }),
+
 /***/ "./pages/blog.js":
 /*!***********************!*\
   !*** ./pages/blog.js ***!
@@ -270,27 +326,81 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layouts/DefaultLayout */ "./components/layouts/DefaultLayout/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/DefaultLayout */ "./components/layouts/DefaultLayout/index.js");
+/* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
 var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/blog.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-/* This route gets hit by default, e.g. your-site.com */
+/* 🌈 This is the client side 🌈*/
 
-const BlogPage = () => {
-  return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+/* dependencies */
+
+/* layout */
+
+
+/* components */
+
+
+/* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
+
+function fetchUrl(url) {
+  return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(url).then(r => r.json());
+}
+/* This route gets hit when our user appends a slug to
+the url and therefore the page request, e.g. your-site.com/about */
+
+
+const BlogPage = ({
+  data
+}) => {
+  const {
+    content
+  } = data;
+  const paragraphModuleData = content.body.find(item => item.component === "Paragraph Module");
+  console.log(`🌈 I am getting this content from Storybok`);
+  console.log(content);
+  /* ---- */
+
+  return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 31
     },
     __self: undefined
-  }, __jsx("h1", {
+  }, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    copy: paragraphModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 34
     },
     __self: undefined
-  }, "Blog page!"));
+  }) : null);
+};
+/* Before rendering, we are calling our internal API endpoint (server).
+This call is hitting the code we wrote in 'pages/api/page/[slug].js' */
+
+
+BlogPage.getInitialProps = async ({
+  query
+}) => {
+  /* {query} is an object we receive within this method from Next,
+    so that we can retrieve the slug (e.g. '/welcome') coming with the route */
+  const {
+    page
+  } = query;
+  /* Calling our internal api endpoint so that we can fetch Storyblok content
+    server-side (we are on client-side here) */
+
+  const data = await fetchUrl(`http://localhost:3000/api/page/${page}`);
+  /* Returning the data back into SlugPage as props */
+
+  return {
+    data
+  };
+  /* This is the same as { data: data } */
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BlogPage);
@@ -306,6 +416,17 @@ const BlogPage = () => {
 
 module.exports = __webpack_require__(/*! /Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/blog.js */"./pages/blog.js");
 
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
