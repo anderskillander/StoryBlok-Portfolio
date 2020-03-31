@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -411,37 +411,27 @@ const SlugPage = ({
   const {
     content
   } = data;
+  const headlineModuleData = content.body.find(item => item.component === "HeadlineModule");
+  const paragraphModuleData = content.body.find(item => item.component === "Paragraph Module");
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
-  const codeString = JSON.stringify(content);
-  const {
-    body
-  } = content;
-  const headlineModuleData = content.body.find(item => item.component === "HeadlineModule");
-  const paragraphModuleData = content.body.find(item => item.component === "ParagraphModule");
-  /* Now you need to map your own components, I just left the headline module as reference */
+  /* ---- */
 
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 33
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: headlineModuleData.title,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
     },
     __self: undefined
-  }, "\uD83C\uDF08 This is what you are getting back from Storyblok: \uD83C\uDF08"), headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: headlineModuleData.title,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: undefined
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: paragraphModuleData.text,
+    copy: paragraphModuleData.text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
@@ -477,7 +467,7 @@ SlugPage.getInitialProps = async ({
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/[page].js ***!
   \*******************************/
