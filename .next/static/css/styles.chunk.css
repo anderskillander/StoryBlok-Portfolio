@@ -9,6 +9,11 @@
   flex-direction: column;
   padding: 4%; }
 
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain; }
+
 /* Global CSS Overwrites */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
