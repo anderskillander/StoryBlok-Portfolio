@@ -10483,7 +10483,26 @@ var DefaultPage = function DefaultPage() {
       lineNumber: 16
     },
     __self: this
-  }, "About")))));
+  }, "About"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Blog")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DefaultPage);

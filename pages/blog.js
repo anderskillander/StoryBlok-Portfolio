@@ -2,12 +2,12 @@ import DefaultLayout from '../components/layouts/DefaultLayout';
 
 
 /* This route gets hit by default, e.g. your-site.com */
-const AboutPage = () => {
+const BlogPage = () => {
     return (
         <DefaultLayout>
-            <h1>Default Pagessss</h1>
+            <h1>Blog page!</h1>
         </DefaultLayout>
     );
 };
 
-export default AboutPage;
+export default BlogPage;
