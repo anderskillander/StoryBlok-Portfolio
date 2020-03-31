@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+a {
+    color: #0080ff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    // border: 1px solid rgb(65, 64, 64);
+    border: solid 10px rgb(150, 149, 149);
+  transition: border-width 0.1s linear;
+    padding: 20px;
+    margin: 50px;
+}
+
+a:hover {
+    // border: 0px 0px 2px 0px 0px solid black;
+    border-width: 5px;
+}

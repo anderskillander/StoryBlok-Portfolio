@@ -2,13 +2,14 @@
 
 /* dependencies */
 import fetch from "isomorphic-unfetch";
-
+import Link from 'next/link';
 /* layout */
 import DefaultLayout from "../components/layouts/DefaultLayout";
 
 /* components */
 import HeadlineModule from "../components/modules/HeadlineModule";
 import ParagraphModule from "../components/modules/ParagraphModule";
+import ImageModule from "../components/modules/ImageModule";
 
 
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
@@ -26,6 +27,9 @@ const SlugPage = ({ data }) => {
   const paragraphModuleData = content.body.find(
     item => item.component === "Paragraph Module"
   );
+  const imageModuleData = content.body.find(
+    item => item.component === "ImageModule"
+  );
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   /* ---- */
@@ -37,6 +41,9 @@ const SlugPage = ({ data }) => {
       ) : null}
       {paragraphModuleData ? (
         <ParagraphModule copy={paragraphModuleData.text} />
+      ) : null}
+      {imageModuleData ? (
+        <ImageModule copy={imageModuleData.text} />
       ) : null}
     </DefaultLayout>
   );

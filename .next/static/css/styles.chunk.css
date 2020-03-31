@@ -145,12 +145,37 @@ body {
 * {
   box-sizing: border-box; }
 
+h1 {
+  text-align: center; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin: 50px; }
+
+a {
+  color: #0080ff;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: solid 10px #969595;
+  transition: border-width 0.1s linear;
+  padding: 20px;
+  margin: 50px; }
+
+a:hover {
+  border-width: 5px; }
+
 .root___1dRZh {
   font-size: 32px;
   text-align: center; }
 
 .root___6SFYA {
   padding: 6% 12%;
+  text-align: center; }
+
+.root___14P1J {
+  font-size: 32px;
   text-align: center; }
 
 
