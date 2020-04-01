@@ -150,26 +150,24 @@ body {
 * {
   box-sizing: border-box; }
 
-h1 {
-  text-align: center; }
+.root___LIsgD h1 {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  color: #e09151;
+  padding-bottom: 18px; }
 
-ul {
+.root___LIsgD body {
+  background-color: red; }
+
+.pageWrapper___yxvJR {
   display: flex;
-  justify-content: center;
-  margin: 50px; }
+  flex-direction: column;
+  padding: 4%; }
 
-a {
-  color: #0080ff;
-  text-decoration: none;
-  font-size: 13px;
-  text-transform: uppercase;
-  border: solid 10px #969595;
-  transition: border-width 0.1s linear;
-  padding: 20px;
-  margin: 50px; }
-
-a:hover {
-  border-width: 5px; }
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain; }
 
 .root___1dRZh {
   font-size: 32px;

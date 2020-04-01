@@ -5,7 +5,7 @@ import fetch from "isomorphic-unfetch";
 import Link from 'next/link';
 /* layout */
 import DefaultLayout from "../components/layouts/DefaultLayout";
-
+import AboutLayout from "../components/layouts/AboutLayout"
 /* components */
 import HeadlineModule from "../components/modules/HeadlineModule";
 import ParagraphModule from "../components/modules/ParagraphModule";
@@ -27,20 +27,28 @@ const SlugPage = ({ data }) => {
   const paragraphModuleData = content.body.find(
     (item) => item.component === "Paragraph Module"
   );
+  const imageModuleData = content.body.find((item) => item.component == 'Image Module');
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   /* ---- */
   return (
+
     <DefaultLayout>
-      {/* <h3>This is what you are getting back from Storyblok:</h3> */}
+
+
       {headlineModuleData ? (
         <HeadlineModule title={headlineModuleData.title} />
       ) : null}
+
       {paragraphModuleData ? (
         <ParagraphModule copy={paragraphModuleData.text} />
       ) : null}
 
+      {imageModuleData ? (
+        <ImageModule copy={imageModuleData.copy} image={imageModuleData.image} />) : null}
     </DefaultLayout>
+
+
   );
 };
 

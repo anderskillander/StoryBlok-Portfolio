@@ -175,6 +175,79 @@ const Head = ({
 
 /***/ }),
 
+/***/ "./components/layouts/AboutLayout/index.js":
+/*!*************************************************!*\
+  !*** ./components/layouts/AboutLayout/index.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/layouts/AboutLayout/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _DefaultLayout_styleReset_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DefaultLayout/styleReset.scss */ "./components/layouts/DefaultLayout/styleReset.scss");
+/* harmony import */ var _DefaultLayout_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_DefaultLayout_styleReset_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/layouts/AboutLayout/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* styles */
+
+
+/* components */
+
+
+
+const AboutLayout = props => {
+  const title = 'About Layout';
+  const description = 'This is the styling for the About Page';
+  return __jsx("div", {
+    className: (_DefaultLayout_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default.a, _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.pageWrapper,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx(_common_Head__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: title,
+    description: description,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }), props.children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (AboutLayout);
+
+/***/ }),
+
+/***/ "./components/layouts/AboutLayout/index.scss":
+/*!***************************************************!*\
+  !*** ./components/layouts/AboutLayout/index.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"root": "root___LIsgD",
+	"pageWrapper": "pageWrapper___yxvJR"
+};
+
+/***/ }),
+
 /***/ "./components/layouts/DefaultLayout/index.js":
 /*!***************************************************!*\
   !*** ./components/layouts/DefaultLayout/index.js ***!
@@ -2116,9 +2189,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layouts/DefaultLayout */ "./components/layouts/DefaultLayout/index.js");
-/* harmony import */ var _components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/modules/HeadlineModule */ "./components/modules/HeadlineModule/index.jsx");
-/* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
-/* harmony import */ var _components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/ImageModule */ "./components/modules/ImageModule/index.jsx");
+/* harmony import */ var _components_layouts_AboutLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layouts/AboutLayout */ "./components/layouts/AboutLayout/index.js");
+/* harmony import */ var _components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/HeadlineModule */ "./components/modules/HeadlineModule/index.jsx");
+/* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
+/* harmony import */ var _components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/modules/ImageModule */ "./components/modules/ImageModule/index.jsx");
 var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/[page].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2129,6 +2203,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 /* layout */
+
 
 
 /* components */
@@ -2153,6 +2228,7 @@ const SlugPage = ({
   } = data;
   const headlineModuleData = content.body.find(item => item.component === "Headline Module");
   const paragraphModuleData = content.body.find(item => item.component === "Paragraph Module");
+  const imageModuleData = content.body.find(item => item.component == 'Image Module');
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   /* ---- */
@@ -2160,21 +2236,29 @@ const SlugPage = ({
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 36
     },
     __self: undefined
-  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__["default"], {
     title: headlineModuleData.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: undefined
-  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__["default"], {
     copy: paragraphModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
+    },
+    __self: undefined
+  }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    copy: imageModuleData.copy,
+    image: imageModuleData.image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
     },
     __self: undefined
   }) : null);
