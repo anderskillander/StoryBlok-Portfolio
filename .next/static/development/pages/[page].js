@@ -199,7 +199,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var ImageModule = function ImageModule(_ref) {
-  var copy = _ref.copy;
+  var image = _ref.image,
+      copy = _ref.copy;
   return __jsx("div", {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
     __source: {
@@ -208,13 +209,19 @@ var ImageModule = function ImageModule(_ref) {
     },
     __self: this
   }, __jsx("img", {
-    src: copy,
+    src: image,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }));
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, copy));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ImageModule);
@@ -10589,13 +10596,13 @@ var SlugPage = function SlugPage(_ref) {
   var data = _ref.data;
   var content = data.content;
   var headlineModuleData = content.body.find(function (item) {
-    return item.component === "HeadlineModule";
+    return item.component === "Headline Module";
   });
   var paragraphModuleData = content.body.find(function (item) {
     return item.component === "Paragraph Module";
   });
   var imageModuleData = content.body.find(function (item) {
-    return item.component === "ImageModule";
+    return item.component === "Image Module";
   });
   console.log("\uD83C\uDF08 I am getting this content from Storybok");
   console.log(content);
@@ -10622,7 +10629,8 @@ var SlugPage = function SlugPage(_ref) {
     },
     __self: this
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    copy: imageModuleData.image,
+    image: imageModuleData.image,
+    copy: imageModuleData.copy,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46

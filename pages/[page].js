@@ -22,13 +22,13 @@ the url and therefore the page request, e.g. your-site.com/about */
 const SlugPage = ({ data }) => {
   const { content } = data;
   const headlineModuleData = content.body.find(
-    item => item.component === "HeadlineModule"
+    (item) => item.component === "Headline Module"
   );
   const paragraphModuleData = content.body.find(
-    item => item.component === "Paragraph Module"
+    (item) => item.component === "Paragraph Module"
   );
   const imageModuleData = content.body.find(
-    item => item.component === "ImageModule"
+    (item) => item.component === "Image Module"
   );
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
@@ -43,11 +43,12 @@ const SlugPage = ({ data }) => {
         <ParagraphModule copy={paragraphModuleData.text} />
       ) : null}
       {imageModuleData ? (
-        <ImageModule copy={imageModuleData.image} />
+        <ImageModule image={imageModuleData.image} copy={imageModuleData.copy} />
       ) : null}
     </DefaultLayout>
   );
 };
+
 
 /* Before rendering, we are calling our internal API endpoint (server).
 This call is hitting the code we wrote in 'pages/api/page/[slug].js' */

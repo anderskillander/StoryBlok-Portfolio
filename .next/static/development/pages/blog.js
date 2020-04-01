@@ -3722,7 +3722,7 @@ var BlogPage = function BlogPage() {
 
 /***/ }),
 
-/***/ 11:
+/***/ 10:
 /*!***********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2Fblog.js ***!
   \***********************************************************************************************************************************************************************************/
@@ -3745,5 +3745,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[11,"static/runtime/webpack.js","styles"]]]);
+},[[10,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=blog.js.map

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import NextHead from 'next/head';
 
 /* This is the html <header> element which you'll need

@@ -3722,7 +3722,7 @@ var AboutPage = function AboutPage() {
 
 /***/ }),
 
-/***/ 10:
+/***/ 11:
 /*!*************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2Fabout.js ***!
   \*************************************************************************************************************************************************************************************/
@@ -3745,5 +3745,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[11,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=about.js.map

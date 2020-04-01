@@ -150,18 +150,6 @@ body {
 * {
   box-sizing: border-box; }
 
-.root___1dRZh {
-  font-size: 32px;
-  text-align: center; }
-
-.root___6SFYA {
-  padding: 6% 12%;
-  text-align: center; }
-
-.root___14P1J {
-  font-size: 32px;
-  text-align: center; }
-
 h1 {
   text-align: center; }
 
@@ -182,6 +170,18 @@ a {
 
 a:hover {
   border-width: 5px; }
+
+.root___1dRZh {
+  font-size: 32px;
+  text-align: center; }
+
+.root___6SFYA {
+  padding: 6% 12%;
+  text-align: center; }
+
+.root___14P1J {
+  font-size: 32px;
+  text-align: center; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
