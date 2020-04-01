@@ -4505,6 +4505,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+function fetchUrl(url) {
+  return fetch(url).then(function (r) {
+    return r.json();
+  });
+}
+
 var AboutPage = function AboutPage(_ref) {
   var data = _ref.data;
   var content = data.content;
@@ -4514,13 +4520,13 @@ var AboutPage = function AboutPage(_ref) {
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 15
     },
     __self: this
   }, "About Page"), imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -4528,7 +4534,7 @@ var AboutPage = function AboutPage(_ref) {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: this
   }) : null);
@@ -4569,7 +4575,7 @@ AboutPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 2:
 /*!*************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2Fabout.js ***!
   \*************************************************************************************************************************************************************************************/
@@ -4592,5 +4598,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=about.js.map

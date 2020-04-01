@@ -1,6 +1,10 @@
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import ImageModule from '../components/modules/ImageModule'
 
+function fetchUrl(url) {
+    return fetch(url).then(r => r.json());
+}
+
 const AboutPage = ({ data }) => {
     const { content } = data;
 
