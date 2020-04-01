@@ -360,7 +360,7 @@ var ProjectModule = function ProjectModule(_ref) {
       lineNumber: 6
     },
     __self: this
-  }, __jsx("h1", {
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -10809,7 +10809,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 12:
+/***/ 7:
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js ***!
   \***********************************************************************************************************************************************************************************************/
@@ -10832,5 +10832,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[12,"static/runtime/webpack.js","styles"]]]);
+},[[7,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map

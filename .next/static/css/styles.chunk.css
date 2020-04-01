@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap);
 .root___3GKdN {
   font-family: 'Baloo Thambi 2', cursive;
   font-weight: 700; }
@@ -154,31 +153,6 @@ body {
 
 * {
   box-sizing: border-box; }
-
-body {
-  font-family: 'Baloo Thambi 2', cursive;
-  font-weight: 700; }
-
-h1 {
-  text-align: center; }
-
-ul {
-  display: flex;
-  justify-content: center;
-  margin: 50px; }
-
-a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 13px;
-  text-transform: uppercase;
-  border: 1px solid #414040;
-  transition: border-width 0.1s linear;
-  padding: 20px;
-  margin: 50px; }
-
-a:hover {
-  border-width: 2px; }
 
 .root___LIsgD h1 {
   font-size: 32px;

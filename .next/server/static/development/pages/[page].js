@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -534,7 +534,7 @@ const ProjectModule = ({
       lineNumber: 6
     },
     __self: undefined
-  }, __jsx("h1", {
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -2374,7 +2374,7 @@ SlugPage.getInitialProps = async ({
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/[page].js ***!
   \*******************************/
