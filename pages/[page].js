@@ -10,6 +10,7 @@ import AboutLayout from "../components/layouts/AboutLayout"
 import HeadlineModule from "../components/modules/HeadlineModule";
 import ParagraphModule from "../components/modules/ParagraphModule";
 import ImageModule from "../components/modules/ImageModule";
+import ProjectModule from "../components/modules/ProjectModule";
 
 
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
@@ -28,6 +29,8 @@ const SlugPage = ({ data }) => {
     (item) => item.component === "Paragraph Module"
   );
   const imageModuleData = content.body.find((item) => item.component == 'Image Module');
+
+  const projectModuleData = content.body.find((item) => item.component == 'Project Module');
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   /* ---- */
@@ -46,6 +49,10 @@ const SlugPage = ({ data }) => {
 
       {imageModuleData ? (
         <ImageModule copy={imageModuleData.copy} image={imageModuleData.image} />) : null}
+
+      {projectModuleData ? (
+        <ProjectModule title={projectModuleData.title} image={projectModuleData.image} text={projectModuleData.text} />) : null}
+
     </DefaultLayout>
 
 

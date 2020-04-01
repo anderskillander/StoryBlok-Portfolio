@@ -15,6 +15,7 @@ const AboutPage = ({ data }) => {
             <h1>About Page</h1>
             {imageModuleData ? (
                 <ImageModule copy={imageModuleData.copy} image={imageModuleData.image} />) : null}
+
         </DefaultLayout>
     );
 };

@@ -502,6 +502,77 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./components/modules/ProjectModule/index.jsx":
+/*!****************************************************!*\
+  !*** ./components/modules/ProjectModule/index.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ProjectModule/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/modules/ProjectModule/index.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* styles */
+
+
+const ProjectModule = ({
+  title,
+  image,
+  text
+}) => {
+  return __jsx("div", {
+    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, title), __jsx("img", {
+    src: image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, text));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProjectModule);
+
+/***/ }),
+
+/***/ "./components/modules/ProjectModule/index.scss":
+/*!*****************************************************!*\
+  !*** ./components/modules/ProjectModule/index.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"root": "root___2Jts3"
+};
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -2193,6 +2264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/HeadlineModule */ "./components/modules/HeadlineModule/index.jsx");
 /* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
 /* harmony import */ var _components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/modules/ImageModule */ "./components/modules/ImageModule/index.jsx");
+/* harmony import */ var _components_modules_ProjectModule__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/modules/ProjectModule */ "./components/modules/ProjectModule/index.jsx");
 var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/[page].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2207,6 +2279,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 /* components */
+
 
 
 
@@ -2229,6 +2302,7 @@ const SlugPage = ({
   const headlineModuleData = content.body.find(item => item.component === "Headline Module");
   const paragraphModuleData = content.body.find(item => item.component === "Paragraph Module");
   const imageModuleData = content.body.find(item => item.component == 'Image Module');
+  const projectModuleData = content.body.find(item => item.component == 'Project Module');
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   /* ---- */
@@ -2236,21 +2310,21 @@ const SlugPage = ({
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: undefined
   }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__["default"], {
     title: headlineModuleData.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 43
     },
     __self: undefined
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__["default"], {
     copy: paragraphModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: undefined
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -2258,7 +2332,16 @@ const SlugPage = ({
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
+    },
+    __self: undefined
+  }) : null, projectModuleData ? __jsx(_components_modules_ProjectModule__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    title: projectModuleData.title,
+    image: projectModuleData.image,
+    text: projectModuleData.text,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
     },
     __self: undefined
   }) : null);

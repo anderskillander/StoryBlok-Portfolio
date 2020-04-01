@@ -7,9 +7,10 @@ const DefaultPage = () => {
 	return (
 		<DefaultLayout>
 			<h1>Anders Killander</h1>
+			<img src="https://i.imgur.com/MV270cZ.jpg"></img>
 			<ul>
 				<li>
-					<Link href="/welcome"><a>Welcome</a>
+					<Link href="/projects"><a>Projects</a>
 					</Link>
 				</li>
 				<li>

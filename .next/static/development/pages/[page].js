@@ -329,6 +329,63 @@ var ParagraphModule = function ParagraphModule(_ref) {
 
 /***/ }),
 
+/***/ "./components/modules/ProjectModule/index.jsx":
+/*!****************************************************!*\
+  !*** ./components/modules/ProjectModule/index.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ProjectModule/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/components/modules/ProjectModule/index.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* styles */
+
+
+var ProjectModule = function ProjectModule(_ref) {
+  var title = _ref.title,
+      image = _ref.image,
+      text = _ref.text;
+  return __jsx("div", {
+    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, title), __jsx("img", {
+    src: image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, text));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProjectModule);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -10623,6 +10680,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/HeadlineModule */ "./components/modules/HeadlineModule/index.jsx");
 /* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
 /* harmony import */ var _components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/modules/ImageModule */ "./components/modules/ImageModule/index.jsx");
+/* harmony import */ var _components_modules_ProjectModule__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/modules/ProjectModule */ "./components/modules/ProjectModule/index.jsx");
 
 var _jsxFileName = "/Users/anderskillander/WebDev/HyperProjects/Data-Interaction/StoryBlok-Portfolio/pages/[page].js";
 
@@ -10638,6 +10696,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 /* components */
+
 
 
 
@@ -10665,6 +10724,9 @@ var SlugPage = function SlugPage(_ref) {
   var imageModuleData = content.body.find(function (item) {
     return item.component == 'Image Module';
   });
+  var projectModuleData = content.body.find(function (item) {
+    return item.component == 'Project Module';
+  });
   console.log("\uD83C\uDF08 I am getting this content from Storybok");
   console.log(content);
   /* ---- */
@@ -10672,21 +10734,21 @@ var SlugPage = function SlugPage(_ref) {
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: this
   }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_6__["default"], {
     title: headlineModuleData.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 43
     },
     __self: this
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_7__["default"], {
     copy: paragraphModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: this
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -10694,7 +10756,16 @@ var SlugPage = function SlugPage(_ref) {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
+    },
+    __self: this
+  }) : null, projectModuleData ? __jsx(_components_modules_ProjectModule__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    title: projectModuleData.title,
+    image: projectModuleData.image,
+    text: projectModuleData.text,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
     },
     __self: this
   }) : null);
@@ -10738,7 +10809,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 12:
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Fanderskillander%2FWebDev%2FHyperProjects%2FData-Interaction%2FStoryBlok-Portfolio%2Fpages%2F%5Bpage%5D.js ***!
   \***********************************************************************************************************************************************************************************************/
@@ -10761,5 +10832,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[12,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map
