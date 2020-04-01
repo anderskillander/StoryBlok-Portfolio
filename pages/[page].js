@@ -27,9 +27,6 @@ const SlugPage = ({ data }) => {
   const paragraphModuleData = content.body.find(
     (item) => item.component === "Paragraph Module"
   );
-  const imageModuleData = content.body.find(
-    (item) => item.component === "Image Module"
-  );
   console.log(`🌈 I am getting this content from Storybok`);
   console.log(content);
   /* ---- */
@@ -42,9 +39,7 @@ const SlugPage = ({ data }) => {
       {paragraphModuleData ? (
         <ParagraphModule copy={paragraphModuleData.text} />
       ) : null}
-      {imageModuleData ? (
-        <ImageModule image={imageModuleData.image} copy={imageModuleData.copy} />
-      ) : null}
+
     </DefaultLayout>
   );
 };
