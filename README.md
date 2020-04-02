@@ -1,5 +1,21 @@
-# This is a student project at Hyper Island with @madamerobot. Below is the instructions we were given
+## This is a student project at Hyper Island for our Data-Interaction module together with @madamerobot.
+I have only focused on getting everything to work and trying to understand as much as possible. I have barely added any content or done any styling as of yet.
 
+
+### Your biggest three challenges throughout the project
+- A lot of new/weird lingo/naming in Storyblok and the code syntax made it hard to understand
+- First time using a CMS so understanding how everything works together took time
+- Creating a new page that could take content from Storyblok AND custom content from code
+
+### Your biggest three learnings - what would you tell yourself if you started again?
+- CMS is cool but not always useful for all kinds of websites. For a portfolio it feels a bit obsolete unless you want to implement a blog or perhaps contiously add new projects
+- Spending time simply looking and experimenting with the code makes you understand it after a while.
+- Talking with class mate/colleagues can really help. Even if you don't get the answer just talking through the current obstacles can open up to solutions
+
+https://andy-portfolio.now.sh/
+
+-----------------------------------------------------------------------------------------------------------------------------
+## Instructions
 
 # FED21 Data Interaction
 Boilerplate using React, Next.js and Storyblok.
